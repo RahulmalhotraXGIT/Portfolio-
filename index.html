@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>My Portfolio</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CSS --> 
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fde0dc; /* Light Peach */
+      color: #6d6d6d; /* Pastel Gray */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ffd3e5; /* Pink Lace */
+      padding: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6d6d6d; /* Pastel Gray */
+      font-weight: bold;
+      margin: 0 1rem;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover, nav a.selected {
+      color: #ff80ab; /* Coral Pink */
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #ff9a8b; /* Melon */
+      color: #fff; /* White */
+    }
+
+    section {
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 15px;
+      background: #fff; /* White */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #ff5e62; /* Pink Salmon */
+      margin-bottom: 0.5rem;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      color: #ff80ab; /* Coral Pink */
+      margin-bottom: 1rem;
+      font-size: 1.8em;
+    }
+
+    h3 {
+      color: #4caf50; /* Mint Green */
+      margin-bottom: 0.5rem;
+      font-size: 1.5em;
+    }
+
+    p {
+      color: #6d6d6d; /* Pastel Gray */
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #1565c0; /* Dark Blue */
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #ff80ab; /* Coral Pink */
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ffd3e5; /* Pink Lace */
+      color: #fff; /* White */
+    }
+
+    #chatbox {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #fff; /* White */
+      padding: 10px;
+      border-radius: 10px;
+      display: none;
+      z-index: 999;
+      color: #6d6d6d; /* Pastel Gray */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #chatbox input {
+      width: 80%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .project-card {
+      background: #fff; /* White */
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .project-card h3 {
+      color: #4caf50; /* Mint Green */
+      margin-bottom: 0.5rem;
+      font-size: 1.8em;
+    }
+
+    .project-card p {
+      color: #6d6d6d; /* Pastel Gray */
+    }
+
+    .project-card a {
+      color: #1565c0; /* Dark Blue */
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .project-card a:hover {
+      color: #ff80ab; /* Coral Pink */
+    }
+
+    #social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    #social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 2em;
+      color: #ff80ab; /* Coral Pink */
+      transition: color 0.3s ease-in-out;
+    }
+
+    #social-links a:hover {
+      color: #ff5e62; /* Pink Salmon */
+    }
+
+    /* Social Links Icons Styling */
+    #social-links a i {
+      font-size: 2em;
+      color: #ff80ab; /* Coral Pink */
+      transition: color 0.3s ease-in-out;
+    }
+
+    #social-links a:hover i {
+      color: #ff5e62; /* Pink Salmon */
+    }
+  </style> 
+ </head> 
+ <body> 
+  <nav> <a href="#about" class="selected">About</a> <a href="#skills">Skills</a> <a href="#experience">Experience</a> <a href="#projects">Projects</a> <a href="#social-links">Connect</a> 
+  </nav> 
+  <header> 
+   <h1>Rahul Malhotra</h1> 
+   <p>Web Developer</p> 
+  </header> 
+  <section id="about"> 
+   <h2>About Me</h2> 
+   <p>Welcome to my cute portfolio!</p> 
+   <p>I'm a whimsical web developer with a passion for creating delightful and efficient digital experiences. Let's build something magical together!</p> 
+  </section> 
+  <section id="skills"> 
+   <h2>Skills</h2> 
+   <ul> 
+    <li>HTML5</li> 
+    <li>CSS3</li> 
+    <li>JavaScript</li> 
+    <li>React</li> 
+    <li>Figma</li>
+    <li>Git/Github</li>
+   </ul> 
+  </section> 
+  <section id="experience"> 
+   <h2>Experience</h2> 
+   <p><b>Bharat Intern</b>
+   <br>Web Developer Intern </p> 
+   <p>Present</p> 
+  </section> 
+  <section id="projects"> 
+   <h2>Projects</h2> 
+   <p>Enchanted E-commerce Platform</p> 
+   <p>Developed a whimsical e-commerce platform with enchanting features for a magical online shopping experience. Duration: 2 years</p> 
+   <p>Fairy-tale Portfolio Website</p> 
+   <p>Designed and implemented a charming portfolio website, showcasing skills and sprinkles of magic. Duration: 1 year</p> <!-- Add more project entries as needed --> 
+  </section> 
+  <section id="social-links"> 
+   <h2>Connect with Me</h2> 
+   <div id="social-bubbles"> <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a> <a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a> <!-- Add more social links as needed --> 
+   </div> 
+  </section> 
+  <div id="chatbox"> 
+   <p>Chat with me:</p> 
+   <input type="text" placeholder="Type your magical message..."> 
+  </div> 
+  <footer>
+    © 2023 Your Name. All rights reserved. 
+  </footer> 
+ 
+</body></html>
